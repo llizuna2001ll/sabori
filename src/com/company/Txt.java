@@ -20,6 +20,7 @@ public class Txt {
     SimpleDateFormat format1 =new SimpleDateFormat("E dd MM yyyy HH:mm:ss");
 
     public String getTxt() {
+        System.out.println(txt);
         return txt;
     }
 

@@ -19,12 +19,13 @@ public class Main  {
         String priority = txt.getPriorité();
         String satellite = txt.getSatellites();
 
-        System.out.println(text);
+        System.out.println(date);
 
 
 
 
-                String insertFields = "INSERT INTO hex(priority,longitude,latitude,altitude,angle,satellites,speed,date) VALUES(";
+
+                String insertFields = "INSERT INTO hex(priority,longitude,latitude,altitude,angle,satellites,speed,date) VALUES('";
 
                 String insertValues = text + "','" + priority + "','"  + longitude + ",'" + latitude + "," + altitude + ","+angle+","+ satellite+","+speed+","+date+"')";
 
