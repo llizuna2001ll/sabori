@@ -28,51 +28,49 @@ public class Txt {
         dat = dat.replace("null", "");
         long dec= Long.parseLong(dat, 16);
         SimpleDateFormat format1 =new SimpleDateFormat("E dd MM yyyy HH:mm:ss");
-
-         System.out.println(format1.format(dec));
-         return dat;
+        return format1.format(dec);
     }
 
-    public String getPriorité()  {
+    public Integer getPriorité()  {
         priorité = priorité. replace("null", "");
-        System.out.println(Integer.parseInt(priorité,16));
-        return priorité;
+
+        return Integer.parseInt(priorité,16);
     }
 
-    public String getLongitude() {
+    public Integer getLongitude() {
         Longitude = Longitude. replace("null", "");
-        System.out.println(Integer.parseInt(Longitude,16));
-        return Longitude;
+
+        return Integer.parseInt(Longitude,16);
     }
 
-    public String getLatitude() {
+    public Integer getLatitude() {
         Latitude = Latitude. replace("null", "");
-        System.out.println(Integer.parseInt(Latitude,16));
-        return Latitude;
+
+        return Integer.parseInt(Latitude,16);
     }
 
-    public String getAltitude() {
+    public Integer getAltitude() {
         Altitude = Altitude. replace("null", "");
-        System.out.println(Integer.parseInt(Altitude,16));
-        return Altitude;
+        System.out.println();
+        return Integer.parseInt(Altitude,16);
     }
 
-    public String getAngle() {
+    public Integer getAngle() {
         Angle = Angle. replace("null", "");
-        System.out.println(Integer.parseInt(Angle,16));
-        return Angle;
+
+        return Integer.parseInt(Angle,16);
     }
 
-    public String getSatellites() {
+    public Integer getSatellites() {
         Satellites = Satellites. replace("null", "");
-        System.out.println(Integer.parseInt(Satellites,16));
-        return Satellites;
+
+        return Integer.parseInt(Satellites,16);
     }
 
-    public String getSpeed() {
+    public Integer getSpeed() {
         Speed = Speed. replace("null", "");
-        System.out.println(Integer.parseInt(Speed,16));
-        return Speed;
+
+        return Integer.parseInt(Speed,16);
     }
 
     public void converter(){
