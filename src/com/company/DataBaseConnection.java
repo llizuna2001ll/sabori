@@ -12,15 +12,13 @@ public class DataBaseConnection {
 
     public Connection getConnection () {
 
-        String databaseName = "";
+        String databaseName = "sabori";
         String databaseUser = "root";
         String databasePassword = "";
-        String url = "jdbc:mysql://localhost/8008" + databaseName;
-
+        String url = "jdbc:mysql://localhost:3306/"+databaseName;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             databaseLink = DriverManager.getConnection(url, databaseUser, databasePassword);
-
         } catch (Exception e) {
 
             e.printStackTrace();
